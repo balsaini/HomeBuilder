@@ -7,8 +7,12 @@ public enum Paint {
     Glossy(4),
     Matte(2);
 
-    private final float cost;
-    Paint(float cost) {
+    private final int cost;
+    Paint(int cost) {
         this.cost = cost;
+    }
+
+    public int getCost() {
+        return this.cost;
     }
 }
